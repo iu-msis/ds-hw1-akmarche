@@ -1,0 +1,58 @@
+body div{
+  background-color: #17202A;
+  margin: 10px;
+  border: 1px dotted #E67E22;
+}
+
+body div h1{
+  color: #F4D03F;
+  margin: 10px;
+  font-family: arial black;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 10px;
+  background-color: #17202A;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav li a{
+  display: inlign;
+  color: white;
+  text-align: center;
+  font-family: arial;
+}
+
+main div {
+  color: white;
+  font-family: arial;
+  margin: 10px;
+  padding: 10px;
+}
+
+footer {
+  background-color: #E67E22;
+  color: white;
+  font-family: arial;
+  margin: 10px;
+  padding: 10px;
+  border: 1px dotted #17202A;
+}
+
+div class.colplaceholder {
+  display: inlign;
+}
+
+img {
+  float: right;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
