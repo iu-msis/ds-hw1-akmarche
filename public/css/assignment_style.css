@@ -10,11 +10,6 @@ body div h1{
   font-family: arial black;
 }
 
-nav ul{
-  list-style-type: none;
-  margin: 10px;
-  background-color: #17202A;
-}
 
 nav li {
   padding: 10px;
@@ -48,11 +43,34 @@ div class.colplaceholder {
 }
 
 img {
-  float: right;
+  float: left;
+  align: right;
+  padding: 5px;
+}
+
+.img {
+  overflow: auto;
 }
 
 .img-container {
   float: left;
-  width: 33.33%;
+  width:100%;
   padding: 10px;
+}
+
+p {
+  width: 50%;
+}
+
+th {
+  color: white;
+}
+
+td {
+  color: white;
+}
+
+table {
+  max-width: 200px;
+  margin: 0 auto;
 }
