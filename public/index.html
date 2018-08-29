@@ -18,16 +18,16 @@
         <div class-"header">
           <div class-"container">
             <nav class-"main-nav">
-              <li><a href="index">Home</a></li>
-              <li><a href="about">About</a></li>
-              <li><a href="favdishes">Favorite Dishes</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="favdishes.html">Favorite Dishes</a></li>
               <li>
                 <!--Search bar-->
                 <form>
                   <input type="search" name="query" placeholder="Search for..." />
                   <input type="submit" value="Go" />
                 </form>
-              </li>              
+              </li>
             </nav>
           </div>
         </div>
@@ -83,8 +83,70 @@
                   A refreshing blend of fresh garden vegetables for hot summer days.
                 </td>
               </tr>
+              <tr>
+                <td>
+                </br>
+                  Date tried: 06/12/18
+                </td>
+                <td>
+                </br>
+                  Date tried: 07/03/18
+                </td>
+                <td>
+                </br>
+                  Date tried: 07/20/18
+                </td>
+                <td>
+                </br>
+                  Date tried: 07/21/18
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  My rating: 8
+                </td>
+                <td>
+                  My rating: 4
+                </td>
+                <td>
+                  My rating: 5
+                </td>
+                <td>
+                  My rating: 7
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </br>
+                  <b>Comments: </b>I love nearly all types of curry. Singapore cusine utilizes many different spices that add a lot of flavor to the dish.
+                </td>
+                <td>
+                </br>
+                  <b>Comments: </b>This is a signature dish for Spanish cuisine. Each region of Spain has its own variation on this classic dish.
+                </td>
+                <td>
+                </br>
+                  <b>Comments: </b>Homemade pesto sauce and pasta completely change a simple dish into one that will impress a dinner party.
+                </td>
+                <td>
+                </br>
+                  <b>Comments: </b>Gazpacho is a traditional Spanish dish served cold and described as a "liquid salad" for its fresh ingredients.
+                </td>
+              </tr>
             </table>
         </div>
+        Recommend a new dish to me:
+        <form>
+          Dish name:
+          <input type="text" name="guestdishname" />
+          Date tried:
+          <input type="date" name="guestdatetried" />
+          Your rating (out of 10):
+          <input type="integer" name="guestrating" />
+          Comments:
+          <input type="text" name="guestcomment" />
+          <input type="submit" name="formsubmit" />
+        </form>
       </div>
     </main>
 
