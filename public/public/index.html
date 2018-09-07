@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap CSS and external CSS file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/assignment_style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tablesort.css"/>
+
+    <title>About Me</title>
+
+  </head>
+  <body>
+    <!--Header elements across website pages (title and navigation bar)-->
+    <div class="container-fluid">
+        <h1>DELIGHTFUL DISHES</h1>
+        <img class="img-container"><img src="img/orangeicon.png" alt="Orange Icon" width="75" height="75"/>
+        <div class-"header">
+          <div class-"container">
+            <nav class-"main-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="favdishes.html">Favorite Dishes</a></li>
+              <li>
+                <!--Search bar-->
+                <form>
+                  <input type="search" name="query" placeholder="Search for..." />
+                  <input type="submit" value="Go" />
+                </form>
+              </li>
+            </nav>
+          </div>
+        </div>
+    </div>
+
+    <!--Main page content-->
+    <main>
+      <div>
+        <div class="img">
+            <b>Recent Dishes I've Tried</b>
+            </br>
+            </br>
+            <table>
+              <tr>
+                <th>Shrimp Curry</th>
+                <th>Seafood Paella</th>
+                <th>Pesto Caprese Pasta</th>
+                <th>Gazpacho</th>
+              </tr>
+              <tr>
+                <td><img><img src="img/singaporecurry.jpg" alt="Curry Dish" height="200" width="200"/></td>
+                <td><img><img src="img/paella.jpg" alt="Paella" height="200" width="200"/></td>
+                <td><img><img src="img/pestopasta.jpg" alt="Pesto Pasta" height="200" width="200"/></td>
+                <td><img><img src="img/gazpacho.jpg" alt="Gazpacho" height="200" width="200"/></td>
+              </tr>
+              <tr>
+                <td>Authentic Singaporean shrimp curry with a mix of spices.</td>
+                <td>Flavorful and comforting dish originating from Valencia, Spain.</td>
+                <td>A taste of garden fresh ingredients mixed with handmade pasta.</td>
+                <td>A refreshing blend of fresh garden vegetables for hot summer days.</td>
+              </tr>
+              <tr>
+                <td></br>Date tried: 06/12/18</td>
+                <td></br>Date tried: 07/03/18</td>
+                <td></br>Date tried: 07/20/18</td>
+                <td></br>Date tried: 07/21/18</td>
+              </tr>
+              <tr>
+                <td>My rating: 8</td>
+                <td>My rating: 4</td>
+                <td>My rating: 5</td>
+                <td>My rating: 7</td>
+              </tr>
+              <tr>
+                <td></br><b>Comments: </b>I love nearly all types of curry. Singapore cusine utilizes many different spices that add a lot of flavor to the dish.</td>
+                <td></br><b>Comments: </b>This is a signature dish for Spanish cuisine. Each region of Spain has its own variation on this classic dish.</td>
+                <td></br><b>Comments: </b>Homemade pesto sauce and pasta completely change a simple dish into one that will impress a dinner party.</td>
+                <td></br><b>Comments: </b>Gazpacho is a traditional Spanish dish served cold and described as a "liquid salad" for its fresh ingredients.</td>
+              </tr>
+            </table>
+        </div>
+
+        <div>
+          <div>
+            <table id="guestrecommendation" class="table table-sm">
+            <b>Guest Recommendations</b>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th>Dish Name</th>
+                <th>Date Tried</th>
+                <th>Your Rating</th>
+                <th>Origin</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Gyro</td>
+                <td>09/07/18</td>
+                <td>7</td>
+                <td>Greek</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Piri-Piri Chicken</td>
+                <td>09/05/18</td>
+                <td>8</td>
+                <td>Swahili</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Pastilla</td>
+                <td>09/04/18</td>
+                <td>9</td>
+                <td>Moroccan</td>
+              </tr>
+            </tbody>
+
+          </table>
+          </div>
+          <div>
+            <b>Recommend a New Dish to Me</b>
+            <form>
+              Dish name:<input type="text" name="guestdishname" />
+              <br />Date tried:<input type="date" name="guestdatetried" />
+              Your rating (out of 10):<input type="integer" name="guestrating" />
+              Origin:<input type="text" name="origin" />
+              <input type="submit" name="formsubmit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer content-->
+    <footer>
+      <p>Kelley MSIS | Indiana University</p>
+    </footer>
+
+    <!--scripts-->
+    <script src="js/tablesort.min.js"></script>
+
+    <!--table sort plugin from https://github.com/tristen/tablesort-->
+    <script>new Tablesort(document.getElementByID('guestrecommendation'));</script>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
