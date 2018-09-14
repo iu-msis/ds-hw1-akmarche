@@ -1,19 +1,47 @@
+/*Font CSS: color, font style, positioning*/
+main h1 {
+  color: #F4D03F;
+  margin: 10px;
+  font-family: arial black;
+}
+
+main h3 {
+  color: white;
+  margin: 10px;
+  font-family: arial black;
+}
+
 body div{
   background-color: #17202A;
   margin: 10px;
   border: 1px dotted #E67E22;
 }
 
-body div h1{
+p {
+  color: white;
+  margin-left: 20px;
+}
+
+a {
+  color:#F4D03F;
+}
+
+#smallText {
+  font-size: 10;
   color: #F4D03F;
-  margin: 10px;
-  font-family: arial black;
+  font-style: italic;
 }
 
-li {
-  float: left;
+/*Background color palette*/
+main {
+  background-color: #17202A;
 }
 
+section {
+  background-color: #17202A;
+}
+
+/*Navigation bar*/
 nav {
   list-style-type: none;
   margin: 2px;
@@ -22,6 +50,7 @@ nav {
 
 nav li {
   padding: 20px;
+  float: left;
 }
 
 nav li a{
@@ -36,6 +65,20 @@ nav li a:hover {
   background-color: #F4D03F;
   color: black;
 }
+
+.img-container {
+  position: fixed;
+  z-index: 2;
+  height: 2%;
+  width: 2%;
+}
+
+
+
+
+
+
+
 
 main div {
   color: white;
@@ -66,16 +109,6 @@ img {
   overflow: auto;
 }
 
-.img-container {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-p {
-  width: 50%;
-}
-
 th {
   color: #F4D03F;
 }
@@ -91,8 +124,4 @@ table {
 
 #guestrecommendation {
   max-width: 500px;
-}
-
-a {
-  color:#F4D03F;
 }
