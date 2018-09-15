@@ -73,8 +73,20 @@ nav li a:hover {
   width: 2%;
 }
 
+/*Button effects*/
+a.button {
+  display: inline-block;
+  margin: 2px;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  font-family: arial;
+}
 
-
+button.hover {
+  color:blue;
+  background-color: red;
+}
 
 
 

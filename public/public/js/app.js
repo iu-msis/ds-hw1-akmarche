@@ -1,16 +1,12 @@
 var foodieSiteApp = new Vue({
   el: '#foodie',
   data: {
-    site: {
-      "name" :  'DELIGHTFUL DISHES',
-      "description" : 'Foodie blog for the culinary adventurer',
+    guest: {
+      "id": 0,
+      "name": '',
+      "age": '',
+      "dish": '',
+      "dish_origin": ''
     }
-    guestRecommendationTable [
-      {
-        "id": 0,
-        "guest_name": '',
-        "guest_age": '',
-      }
-    ]
   }
 })
