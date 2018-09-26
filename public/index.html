@@ -7,20 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>About Me</title>
-    <link rel="stylesheet" type="text/css" href="css/assignment_style.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/assignment_style.css"/>
 
   </head>
   <body>
     <!--Header elements across website pages (title and navigation bar)-->
-    <div class="container-fluid">
+    <main id="foodie" class="container-fluid">
         <h1>DELIGHTFUL DISHES</h1>
-        <img class="img-container"><img src="https://marketplace.canva.com/MAB6x0Wf1KY/1/thumbnail_large/canva-orange-icon.-fruit-design.-vector-graphic-MAB6x0Wf1KY.png" alt="Orange Icon" width="75" height="75"/>
-        <div class-"header">
-          <div class-"container">
-            <nav class-"main-nav">
+        <p><em>Foodie blog for the culinary adventurer</em></p>
+        <img><img src="public/img/orangeicon.png" alt="Orange Icon" height="100px" width="100px"/>
+        <div class="header">
+          <div class="container">
+            <nav class="main-nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="favdishes.html">Favorite Dishes</a></li>
+              <li><a href="guestrec.html">Guest Recommendations</a></li>
+              <li><a href="info.php">Info</a></li>
               <li>
                 <!--Search bar-->
                 <form>
@@ -31,15 +34,10 @@
             </nav>
           </div>
         </div>
-    </div>
 
-    <!--Main page content-->
-    <main>
-      <div>
         <div class="img">
-            <b>Recent Dishes I've Tried</b>
-            </br>
-            </br>
+          <div>
+            <h3>RECENT DISHES</h3>
             <table>
               <tr>
                 <th>Shrimp Curry</th>
@@ -47,69 +45,57 @@
                 <th>Pesto Caprese Pasta</th>
                 <th>Gazpacho</th>
               </tr>
-              <tr>
-                <td><img><img src="https://i.pinimg.com/originals/c4/bc/36/c4bc366927bf7bee1827a38f89af239b.jpg" alt="Curry Dish" height="200" width="200"/></td>
-                <td><img><img src="https://cdn.jamieoliver.com/recipe-database/oldImages/medium/372_36_1440760950.jpg" alt="Paella" height="200" width="200"/></td>
-                <td><img><img src="http://www.threeolivesbranch.com/wp-content/uploads/2017/10/IMG_7189-768x1024.jpg" alt="Pesto Pasta" height="200" width="200"/></td>
-                <td><img><img src="https://i2.wp.com/www.holajalapeno.com/wp-content/uploads/2016/08/Mexican-Gazpacho-with-Avocado.jpg?resize=680%2C907" alt="Gazpacho" height="200" width="200"/></td>
-              </tr>
-              <tr>
+              <tr id="smallText">
                 <td>Authentic Singaporean shrimp curry with a mix of spices.</td>
                 <td>Flavorful and comforting dish originating from Valencia, Spain.</td>
                 <td>A taste of garden fresh ingredients mixed with handmade pasta.</td>
                 <td>A refreshing blend of fresh garden vegetables for hot summer days.</td>
               </tr>
               <tr>
-                <td></br>Date tried: 06/12/18</td>
-                <td></br>Date tried: 07/03/18</td>
-                <td></br>Date tried: 07/20/18</td>
-                <td></br>Date tried: 07/21/18</td>
+                <td><img><img src="public/img/singaporecurry.jpg" alt="Curry Dish" height="200" width="200"/></td>
+                <td><img><img src="public/img/paella.jpg" alt="Paella" height="200" width="200"/></td>
+                <td><img><img src="public/img/pestopasta.jpg" alt="Pesto Pasta" height="200" width="200"/></td>
+                <td><img><img src="public/img/gazpacho.jpg" alt="Gazpacho" height="200" width="200"/></td>
+              </tr>
+              <tr id="postingDate">
+                <td>Posting date: 06/12/18</td>
+                <td>Posting date: 07/03/18</td>
+                <td>Posting date: 07/20/18</td>
+                <td>Posting date: 07/21/18</td>
               </tr>
               <tr>
-                <td>My rating: 8</td>
-                <td>My rating: 4</td>
-                <td>My rating: 5</td>
-                <td>My rating: 7</td>
-              </tr>
-              <tr>
-                <td>
-                </br>
-                  <b>Comments: </b>I love nearly all types of curry. Singapore cusine utilizes many different spices that add a lot of flavor to the dish.
-                </td>
-                <td>
-                </br>
-                  <b>Comments: </b>This is a signature dish for Spanish cuisine. Each region of Spain has its own variation on this classic dish.
-                </td>
-                <td>
-                </br>
-                  <b>Comments: </b>Homemade pesto sauce and pasta completely change a simple dish into one that will impress a dinner party.
-                </td>
-                <td>
-                </br>
-                  <b>Comments: </b>Gazpacho is a traditional Spanish dish served cold and described as a "liquid salad" for its fresh ingredients.
-                </td>
+                <td>I love nearly all types of curry. Singapore cusine utilizes many different spices that add a lot of flavor to the dish.</td>
+                <td>This is a signature dish for Spanish cuisine. Each region of Spain has its own variation on this classic dish.</td>
+                <td>Homemade pesto sauce and pasta completely change a simple dish into one that will impress a dinner party.</td>
+                <td>Gazpacho is a traditional Spanish dish served cold and described as a "liquid salad" for its fresh ingredients.</td>
               </tr>
             </table>
+          </div>
         </div>
-        Recommend a new dish to me:
-        <form>
-          Dish name:
-          <input type="text" name="guestdishname" />
-          Date tried:
-          <input type="date" name="guestdatetried" />
-          Your rating (out of 10):
-          <input type="integer" name="guestrating" />
-          Comments:
-          <input type="text" name="guestcomment" />
-          <input type="submit" name="formsubmit" />
-        </form>
-      </div>
+
+        <!--Footer content-->
+        <footer>
+          <p>Kelley Master of Science in Information Systems | Indiana University</p>
+        </footer>
+
     </main>
 
-    <!--Footer content-->
-    <footer>
-      <p>Kelley MSIS | Indiana University</p>
-    </footer>
+    <!--scripts-->
+    <!--moment.js via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <!--development version-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="js/tablesort.min.js"></script>
+
+    <!--table sort plugin from https://github.com/tristen/tablesort-->
+    <script>new Tablesort(document.getElementByID('guestrecommendation'));</script>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/app.js"></script>
 
   </body>
-</html>
+  </html>

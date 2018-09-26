@@ -32,6 +32,11 @@ a {
   font-style: italic;
 }
 
+#postingDate {
+  font-size: 10;
+  color: #F4D03F;
+}
+
 /*Background color palette*/
 main {
   background-color: #17202A;
