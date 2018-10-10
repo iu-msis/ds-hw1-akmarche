@@ -44,8 +44,8 @@ class Comment
     $arr = [];
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
       // 4.a. For each row, make a new work object
-      $commentItem =  new Comment($row);
-      array_push($arr, $commentItem);
+      $comment =  new Comment($row);
+      array_push($arr, $comment);
     }
     // 4.b. return the array of work objects
     return $arr;

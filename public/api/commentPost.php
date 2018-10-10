@@ -1,4 +1,4 @@
 <?php
-$commentItem = new Comment($_POST);
-$commentItem->create();
-echo json_encode($commentItem);
+$comment = new Comment($_POST);
+$comment->create();
+echo json_encode($comment);
