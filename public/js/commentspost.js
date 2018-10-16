@@ -24,7 +24,7 @@ methods: {
         body: s //body data type must match "content-type" header
       })
       .then( response => response.json() )
-      .then( json => {this.comments.push(json)})
+      .then( json => {this.guest.push(json)})
       .catch( err => {
         console.error('COMMENT POST ERROR:');
         console.error(err);
@@ -47,7 +47,7 @@ methods: {
 
         fetch('api/comment.php')
         .then( response => response.json() )
-        .then( json => {commentApp.comment = json} )
+        .then( json => {commentApp.guest = json} )
         .catch( err => {
           console.log('COMMENT ERROR:');
           console.log(err);
