@@ -3,7 +3,7 @@ var commentApp = new Vue({
   data: {
     guest: [{
       id: '',
-      comment: ''
+      comments: ''
     }],
     commentForm: {},
   },
@@ -11,7 +11,7 @@ var commentApp = new Vue({
 methods: {
     handleNewCommentForm(e) { //Handles the POST process
       //Build JSON to send
-      this.commentForm.comment = this.commentForm.comment;
+      //this.commentForm.comment = this.commentForm.comment;
       const s = JSON.stringify(this.commentForm); //stores data that is passed to form in string format
       console.log(s);
 
