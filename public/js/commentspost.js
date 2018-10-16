@@ -32,14 +32,15 @@ methods: {
 
       // Reset workForm
       this.newCommentForm = this.getEmptyNewCommentForm();
-    }
+    },
+
+      getEmptyNewCommentForm() {
+        return {
+          comment: null
+        }
+      },
   },
 
-  getEmptyNewCommentForm() {
-    return {
-      comment: null
-    }
-  },
 
   created () {
         this.newCommentForm = this.getEmptyNewCommentForm();
