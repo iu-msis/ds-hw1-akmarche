@@ -30,15 +30,14 @@ class Comment
 
   }
 
-  public static function getWorkByTaskId(int $id) {
+  public static function fetchAll() {
     // 1. Connect to the database
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
     // 2. Prepare the query
-    $sql = 'SELECT * FROM Comment WHERE id = ?';
+    $sql = 'SELECT * FROM Comment';
     $statement = $db->prepare($sql);
     // 3. Run the query
     $success = $statement->execute(
-        [$id]
     );
     // 4. Handle the results
     $arr = [];
