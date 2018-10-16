@@ -11,7 +11,7 @@ class Comment
 
   public function create() {
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
-    $sql = 'INSERT INTO Comment (id, comments)
+    $sql = 'INSERT INTO comments (id, comments)
       VALUES (?,?)';
 
       //something here helps to prevent SQL injection attacks
