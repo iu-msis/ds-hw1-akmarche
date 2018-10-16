@@ -6,12 +6,12 @@ class Comment
 
   public function __construct($row) {
     $this->id = intval($row['id']);
-    $this->comment = $row['comment'];
+    $this->comment = $row['comments'];
   }
 
   public function create() {
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
-    $sql = 'INSERT INTO Comment (id, comment)
+    $sql = 'INSERT INTO Comment (id, comments)
       VALUES (?,?)';
 
       //something here helps to prevent SQL injection attacks
