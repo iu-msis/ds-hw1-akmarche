@@ -5,8 +5,8 @@ class Comment
   public $comment;
 
   public function __construct($row) {
-    $this->id = intval($row['id']);
-    $this->comment = $row['comments'];
+    $this->id = isset($row['id'])? intval($row['id']) : null;
+    $this->comment = $row['comment'];
   }
 
   public function create() {
@@ -18,15 +18,15 @@ class Comment
   $statement = $db->prepare ($sql);
   $success = $statement->execute([
     $this->id,
-    $this->comment
+    $this->comment,
   ]);
+      $this->id = $db->lastInsertID();
 
-    if (!$success) {
+    //if (!$success) {
       //TODO: Better error handling
-      die ('Bad SQL on insert');
-    }
+      //die ('Bad SQL on insert');
+    //}
 
-    $this->id = $db->lastInsertID();
 
   }
 
