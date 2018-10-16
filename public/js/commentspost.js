@@ -1,9 +1,9 @@
 var commentApp = new Vue({
-  el: '#comment',
+  el: '#mainClass',
   data: {
     guest: [{
-      "id": 0,
-      "comment": ''
+      id: 0,
+      comment: ''
     }],
     commentForm: {},
   },
