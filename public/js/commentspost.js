@@ -36,7 +36,7 @@ methods: {
 
       getEmptyNewCommentForm() {
         return {
-          comment: null
+          comments: null
         }
       },
   },
