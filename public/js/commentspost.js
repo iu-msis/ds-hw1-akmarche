@@ -2,7 +2,7 @@ var commentApp = new Vue({
   el: '#mainClass',
   data: {
     guest: [{
-      id: 0,
+      id: '',
       comment: ''
     }],
     commentForm: {},
@@ -31,7 +31,7 @@ methods: {
       })
 
       // Reset workForm
-      this.newCommentForm = this.getEmptyNewCommentForm();
+      this.commentForm = this.getEmptyNewCommentForm();
     },
 
       getEmptyNewCommentForm() {
@@ -43,7 +43,7 @@ methods: {
 
 
   created () {
-        this.newCommentForm = this.getEmptyNewCommentForm();
+        this.commentForm = this.getEmptyNewCommentForm();
 
         fetch('api/comment.php')
         .then( response => response.json() )
