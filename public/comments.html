@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap CSS and external CSS file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/assignment.style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tablesort.css"/>
+
+    <title>Comments</title>
+
+  </head>
+  <body>
+    <!--Header elements across website pages (title and navigation bar)-->
+    <main id="foodie" class="container-fluid">
+        <h1>DELIGHTFUL DISHES</h1>
+        <p><em>Foodie blog for the culinary adventurer</em></p>
+        <img><img src="img/orangeicon.png" alt="Orange Icon" height="100px" width="100px"/>
+        <div class="header">
+          <div class="container">
+            <nav class="main-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="favdishes.html">Favorite Dishes</a></li>
+              <li><a href="guestrec.html">Guest Recommendations</a></li>
+              <li><a href="info.php">Info</a></li>
+              <li>
+                <!--Search bar-->
+                <form>
+                  <input type="search" name="query" placeholder="Search for..." />
+                  <input type="submit" value="Go" />
+                </form>
+              </li>
+            </nav>
+          </div>
+        </div>
+
+        <!--Guidance received from Mayur Dhaniwala on connecting html file to JS-->
+
+        <div class="img">
+          <div>
+            <h3>COMMENTS</h3>
+            <table id="commentTable">
+              <tr>
+                <th>#</th>
+                <th>Comments</th>
+              </tr>
+              <tbody id="commentTableBody">
+                <tr v-for="c in comments">
+                  <td>{{c.id}}</td>
+                  <td>{{c.comment}}</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <form id="newCommentForm" @submit.prevent="handleNewCommentForm">
+              <input id="comment" type="text" value="" placeholder="New comment here..." v-model="commentForm.comment"/>
+              <input id="submitNewComment" type="submit" value="Post Comment"/>
+            </form>
+
+          </div>
+        </div>
+
+        <!--Footer content-->
+        <footer>
+          <p>Kelley Master of Science in Information Systems | Indiana University</p>
+        </footer>
+
+    </main>
+
+    <!--scripts-->
+    <!--moment.js via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <!--development version-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="js/tablesort.min.js"></script>
+
+    <!--table sort plugin from https://github.com/tristen/tablesort-->
+    <script>new Tablesort(document.getElementByID('guestrecommendation'));</script>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+  </html>
